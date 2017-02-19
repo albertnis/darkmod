@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Skin Name: DarkMOD -->
+<!-- Version: 1.0.7 -->
+<!-- Optimized for MusicBee version: 3.0 on Windows 10 -->
+<!-- Last Update: 28 Jan 2016 -->
+<!-- By: blidmink -->
+<!-- Based on (and icons from) DarkRED by Endeavour1934-->
+
+<root>
+	<variables>
+        Highlight="{0}"
+        Highlight-Trans-Light="{1}"
+        Highlight-Trans-Dark="{2}"
+
+        Highlight-Text="240,240,240"
+        Med-Text="170,170,170"
+        Low-Text="110,110,110"
+
+        Bg-VLow="100,100,100"
+        Bg-Low="93,93,93"
+        Bg-Med="80,80,80"
+        Bg-High="40,40,40"
+        Bg-VHigh="30,30,30"
+
+        Bg-Menubar="20,20,20"
+        Highlight-Text-Menus="240,240,240"
+        Highlight-Disabled="40,40,40"
+        Spectrum-High="235,235,235"
+	</variables>
+
+<colours id="Default">
+\\ APP WINDOW
+  <element id="ApplicationBackColour" bg="Bg-High" />
+  <element id="WindowBackColour" bg="Bg-High" /> <!-- Floating + Settings Window -->
+\\ TITLE + MENU BAR
+  <element id="TitlebarActiveForeColour" bg="Highlight-Text" />
+  <element id="TitlebarInactiveForeColour" bg="Med-Text" />
+  <element id="MenuBar.Default" bg="{6}" fg="Highlight-Text" />
+  <element id="MenuBarSeparator" bg="Bg-Menubar" /> <!-- line below menubar -->
+  <element id="MenuButton.Default" bg="Highlight-Trans-Dark" fg="Highlight-Text" bdr="Highlight-Trans-Dark" /> <!-- MusicBee header button -->
+  <element id="MenuButton.Border" bg="Bg-Menubar" />
+\\ MENUS
+  <element id="Menu.ParentItem.Highlight" bg="Highlight" fg="Highlight-Text" bdr="Highlight" />
+  <element id="Menu.ParentItem.Pressed" bg="Bg-Low" />
+  <element id="Menu.DropDown.Default" bg="Bg-Low" fg="Highlight-Text" bdr="Bg-Med" />
+  <element id="Menu.DropDown.Highlight" bg="Highlight" />
+  <element id="Menu.DropDown.HighlightText" fg="Highlight-Text" />
+  <element id="Menu.DropDown.Disabled" fg="Med-Text" />
+  <element id="Menu.DropDownMargin" bg="Bg-Low" />
+  <element id="Menu.DropDownSeparator" bg="Bg-VLow" />
+  <element id="Menu.DropDownCheckBox.Default" bg="Med-Text" />
+  <element id="Menu.DropDownCheckBox.Highlight" bg="Highlight-Text" />
+  <element id="Menu.DropDownCheckBoxBorder.Default" bg="Med-Text" />
+  <element id="Menu.DropDownCheckBoxBorder.Highlight" bg="Highlight" />
+  <element id="InlineMenuBar.Default" bg="0,0,0,0" fg="Highlight-Text" />
+  <element id="InlineMenu.ParentItem.Highlight" bg="Highlight" fg="Highlight-Text" bdr="Highlight" />
+  <element id="InlineMenu.ParentItem.Pressed" bg="Bg-Low" fg="Highlight-Text" />
+
+\\ MAIN PANEL HEADER
+\\ --- MAIN PANEL TOOLBAR
+  <element id="Panel.Header.Default" bg="{6}" fg="180,180,180" /> <!-- Toolbar & Now Playing Header -->
+  <element id="Panel.HeaderControl.Default" bg="Bg-High" bg2="Bg-High" fg="180,180,180" bdr="Bg-High" /> <!-- Address Bar Inactive -->
+  <element id="Panel.HeaderControl.Highlight" bg="50,50,50" fg="50,50,50" bdr="Bg-High" /> <!--line-->
+  <element id="Panel.LocationBarEdit.Default" bg="50,50,50" fg="200,200,200" /> <!-- Address Bar Active -->
+  <element id="Panel.HeaderButtonOverride.Default" fg="Low-Text" /> <!-- Button color -->
+  <element id="Panel.HeaderButtonOverride.Disabled" fg="55,55,55" /> <!-- Button disabled -->
+  <element id="Panel.HeaderButtonOverride.Highlight" bg="53,53,53" /> <!-- bg of highlighted button -->
+  <element id="Controls.SearchBox.Default" bg="Bg-High" fg="Low-Text" bdr="Bg-High" />
+  <element id="Controls.SearchBox.Lowlight" bg="Bg-High" fg="85,85,85" />
+  <element id="Controls.SearchBoxSplitter" bg="Bg-High" />
+  <element id="Panel.SearchBox" bdr="Bg-High" />
+  <element id="Panel.CommandButtonOverride" bg="Bg-High" fg="100,100,100" />
+  <element id="CaptionBar.HeaderControl.Default" fg="Highlight-Text" />
+  <element id="CaptionBar.HeaderControl.Disabled" fg="Med-Text"  />
+  <element id="CaptionBar.SearchBox.Default" bg="Highlight-Trans-Dark" fg="Highlight-Text" bdr="Highlight-Trans-Dark" />
+  <element id="CaptionBar.SearchBox.Lowlight" fg="Highlight-Text" />
+  <element id="CaptionBar.CommandButtonOverride" bg="Highlight-Trans-Dark" fg="Highlight-Text" />
+  <element id="CaptionBar.CommandIconOverride" fg="90,90,90" />
+\\ --- A-Z JUMPBAR
+  <element id="Panel.SubHeader.Default" bg="Bg-High" fg="235,235,235" /> <!-- A-Z jumpbar bg, fg?? -->
+  <element id="Menu.CommandButton.Default" fg="100,100,100" /> <!-- A-Z jumpbar text -->
+  <element id="Menu.CommandButton.Selected" bg="Highlight" fg="Highlight-Text" bdr="Highlight" />
+\\ --- TABS BAR
+  <element id="TabsBar.Background" bg="Bg-High" bdr="Bg-High" />
+  <element id="TabsBar.Tab.Default" bg="Bg-High" fg="100,100,100" bdr="Bg-High" />
+  <element id="TabsBar.Tab.Highlight" bg="Bg-High" bg2="Bg-High" fg="200,200,200" bdr="Bg-High" />
+  <element id="TabsBar.TabCloseButton.Default" fg="50,50,50" />
+  <element id="TabsBar.TabCloseButton.Highlight" bg="0,40,40,40" fg="110,110,110" bdr="0,40,40,40" />
+  <element id="TabsBar.InactiveTabIconMask" bg="210,40,40,40" />
+  <element id="TabsBar.TabAddButton.Default" bg="Bg-High" fg="60,60,60" bdr="Bg-High" />
+
+\\ TABS IN CAPTION BAR
+  <element id="TabsBar.TabInCaptionBar.Default" bg="Highlight-Trans-Dark" fg="120,120,120" bdr="Highlight-Trans-Dark" />
+  <element id="TabsBar.TabInCaptionBar.Highlight" bg="Highlight" fg="200,200,200" bdr="Highlight-Trans-Dark" />
+  <element id="TabsBar.TabInCaptionBarCloseButton.Default" fg="35,35,35" />
+  <element id="TabsBar.InactiveTabInCaptionIconMask" bg="0,20,20,20" />
+  <element id="TabsBar.TabInCaptionBarAddButton.Default" bg="Bg-VHigh" fg="Med-Text" bdr="Bg-VHigh" />
+\\ TABS IN CAPTION BAR WITH PLAYER ON TOP
+  <element id="TabsBar.TabInCaptionBarTop.Default" bg="Highlight-Trans-Dark" fg="Med-Text" bdr="Highlight-Trans-Dark" />
+  <element id="TabsBar.TabInCaptionBarTop.Highlight" bg="Highlight" fg="Highlight-Text" bdr="Highlight" />
+\\ TABS BAR VERTICAL
+  <element id="TabsVBar.Background" bg="Bg-High" />
+  <element id="TabsVBar.Tab.Highlight" bg="Bg-High" fg="200,200,200" />
+  <element id="TabsVBar.Tab.Default" bg="Bg-High" fg="100,100,100" />
+
+\\ SIDE PANELS
+\\ --- NAVIGATOR HEADERS (AND 'ORDER+ARTWORK SIZE' MAIN PANEL BAR IF Content[Artwork].Header IS DISABLED)
+  <element id="Panel.SectionHeader.Default" bg="Bg-High" bg2="Bg-High" fg="100,100,100" />
+\\ --- NAVIGATOR BODY (AND LIBRARY EXPLORER 'SUP+INF TAB BORDERS')
+  <element id="Panel.Body.Default" bg="Bg-High" fg="180,180,180" bdr="Bg-High" /> <!-- bdr is around all panels -->
+  <element id="Panel.Body.Highlight" bg="Highlight" fg="Highlight-Text" />
+  <element id="Panel.Body.Lowlight" bg="50,50,50" fg="160,160,160" />
+\\ --- INBOX INDICATOR
+  <element id="Controls.Counter" bg="Highlight" fg="Highlight-Text" />
+\\ --- RIGHT PANEL HEADER
+  <element id="Sidebar.Header.Default" bg="Bg-High" fg="200,200,200" bdr="Bg-High" />
+\\ --- LIBRARY EXPLORER HEADER (AND CURRENT TRACK TABS BG IF Panel.ChildHeaderWithTabs.Default IS DISABLED)
+  <element id="Panel.ChildHeader.Default" bg="Bg-High" fg="200,200,200" bdr="Bg-High" />
+<!-- <element id="LibraryExplorer.Header.Default" bg="255,255,255" fg="170,170,170" bdr="170,170,170" /> --> <!-- Library Explorer Header ONLY -->
+\\ --- CURRENT TRACK TABS
+<!-- <element id="Panel.ChildHeaderWithTabs.Default" bg="217,222,229"/> --> <!-- current track tabs bg -->
+  <element id="Panel.ChildHeaderControl.Default" bg="Bg-High" fg="100,100,100" /> <!-- inactive tab -->
+  <element id="Panel.ChildHeaderControl.Highlight" bg="Bg-High" fg="160,160,160" bdr="Bg-High" /> <!-- active tab -->
+\\ --- LIBRARY EXPLORER TABS (AND LINE BELOW CURRENT TRACK)
+  <element id="Panel.TabSelector.Default" bg="Bg-High" bg2="Bg-High" fg="130,130,130" />
+  <element id="Panel.TabSelector.Highlight" bg="255,50,50,50" bdr="0,130,130,130" />
+  <element id="Panel.TabSelector.Lowlight" bg="255,50,50,50" bg2="255,50,50,50" />
+\\ --- LIBRARY EXPLORER BODY (AND CURRENT TRACK BODY)
+  <element id="Panel.ChildBody.Default" bg="Bg-High" fg="150,150,150" />
+  <element id="Panel.ChildBody.Highlight" bg="Highlight" fg="Highlight-Text" />
+  <element id="Panel.ChildBody.Lowlight" bg="70,70,70" fg="200,200,200" />
+\\ --- CURRENT TRACK HEADER
+  <element id="NowPlayingPanel.TabSelector.Default" bg="Bg-High" bg2="Bg-High" fg="180,180,180" bdr="Bg-High" /> <!-- Current Track Header Bar -->
+  <element id="NowPlayingPanel.TabSelector.Highlight" bg="190,190,190" />
+  <element id="NowPlayingPanel.TabSelector.Lowlight" bg="Bg-High" fg="160,160,160" />
+  <element id="NowPlayingPanel.SectionHeader" bg="0,255,0" bg2="255,0,0" fg="0,0,255" />
+
+\\ STATUS BARS
+  <element id="Panel.StatusBar.Default" bg="Bg-High" fg="Med-Text" bdr="Bg-High" />
+  <element id="Panel.StatusBarControl.Default" fg="Highlight" /> <!-- Status Bar Buttons -->
+\\ SCROLL BARS
+  <element id="Panel.ScrollBar.Default" bg="60,60,60" bg2="60,60,60" bdr="60,60,60" /> <!-- Scroll Bar Body -->
+  <element id="Panel.ScrollBarThumb.Default" bg="0,40,40,40" bg2="0,40,40,40" fg="60,60,60" bdr="0,40,40,40" /> <!-- Scroll Bar Buttons -->
+  <element id="Panel.ScrollBarBackground.Default" bg="0,40,40,40" bg2="0,40,40,40" />  <!-- Scroll Bar Background -->
+\\ NOW PLAYING BODY
+  <element id="Content[TrackDetail].Header" fg="180,180,180" />
+  <element id="Content[TrackDetail].Body.ListHeader" bg="Bg-High" bg2="Bg-High" fg="85,85,85" bdr="Bg-High" /> <!-- Now Playing Details Headerbar -->
+  <element id="Content[TrackDetail].Body.Default" bg="Bg-High" fg="180,180,180" /> <!-- bg album from album&tracks view, fg speaker icon too -->
+  <element id="Content[TrackDetail].Body.Disabled" bg="Bg-High" fg="120,120,120" />
+  <element id="Content[TrackDetail].Body.Highlight" bg="Highlight" fg="Highlight-Text" />
+  <element id="Content[TrackDetail].Body.Lowlight" bg="50,50,50" fg="180,180,180" />
+  <element id="Content[TrackDetail].ListAlternating.Default" bg="42,42,42" fg="180,180,180" />
+  <element id="Content[TrackDetail].ListAlternating.Disabled" bg="Bg-High" fg="180,180,180" />
+  <element id="NowPlaying[AlbumAndTracks].AlbumSeparatorLine" bg="Bg-High" />
+
+\\ NEW
+  <element id="NowPlayingList[TrackDetail].ListHeader" bg="Bg-High" bg2="Bg-High" fg="85,85,85" bdr="Bg-High" />
+  <element id="NowPlayingList[TrackDetail].Default" bg="Bg-High" fg="180,180,180" bdr="Bg-High" />
+  <element id="NowPlayingList[TrackDetail].Highlight" bg="Highlight" bdr="Highlight" fg="Highlight-Text" />
+  <element id="NowPlayingList[TrackDetail].Lowlight" bg="50,50,50" bdr="50,50,50" fg="180,180,180" />
+  <element id="NowPlayingList[TrackDetail].Disabled" fg="120,120,120" />
+  <element id="NowPlayingList[TrackDetail].ListAlternating.Default" bg="Bg-High" fg="180,180,180" />
+  <element id="NowPlayingList[TrackDetail].ListAlternating.Disabled" fg="120,120,120" />
+  <element id="NowPlayingList.ScrollBar" bg="60,60,60" bg2="60,60,60" bdr="60,60,60" />
+  <element id="NowPlayingList.ScrollBarThumb" bg="0,40,40,40" bg2="0,40,40,40" fg="60,60,60" bdr="0,40,40,40" />
+  <element id="NowPlayingList.ScrollBarBackground" bg="0,40,40,40" bg2="0,40,40,40" />
+  <element id="FilterPanel.ListHeader" bg="Bg-High" bg2="Bg-High" fg="100,100,100" bdr="Bg-High" />
+  <element id="FilterPanel.Default" bg="Bg-High" fg="180,180,180" bdr="Bg-High" />
+  <element id="FilterPanel.Highlight" bg="Highlight" bdr="Highlight" fg="Highlight-Text" />
+  <element id="FilterPanel.Lowlight" bg="50,50,50" bdr="50,50,50" fg="180,180,180" />
+  <element id="FilterPanel.Disabled" fg="120,120,120" />
+  <element id="FilterPanel.ListAlternating.Default" bg="Bg-High" fg="180,180,180" />
+  <element id="FilterPanel.ListAlternating.Disabled" fg="120,120,120" />
+  <element id="FilterPanel.ScrollBar" bg="60,60,60" bg2="60,60,60" bdr="60,60,60" />
+  <element id="FilterPanel.ScrollBarThumb" bg="0,40,40,40" bg2="0,40,40,40" fg="60,60,60" bdr="0,40,40,40" />
+  <element id="FilterPanel.ScrollBarBackground" bg="0,40,40,40" bg2="0,40,40,40" />
+
+\\ MAIN PANEL BODY
+\\ --- CONTENT
+  <element id="Content[AlbumAndTracks]" />
+  <element id="Content[AlbumAndTracks].Header" fg="200,200,200" /> <!-- Title color -->
+  <element id="Content[AlbumAndTracks].ArtistSplitterLine" bg="60,60,60" /> <!-- Line below Title -->
+  <element id="Content[Artwork]" />
+  <element id="Content[Artwork].Header" bg="Bg-High" fg="90,90,90" bdr="Bg-High" />
+  <element id="Content[Artwork].HeaderControl.Default" bg="70,70,70" bg2="70,70,70" fg="65,65,65" bdr="70,70,70"/> <!-- slider cover size -->
+  <element id="Content[Artwork].Body.Default" bg="Bg-High" fg="200,200,200" /> <!-- Main Body -->
+  <element id="Content[Artwork].Body.Highlight" bg="Highlight" />
+  <element id="Content[Artwork].Body.Lowlight" bg="70,70,70" />
+  <element id="Content[Artwork].ArtworkText" bg="Bg-High" fg="200,200,200" />
+  <element id="Content[ArtistProfile]" />
+  <element id="LyricsPanel" />
+  <element id="TrackInfoPanel" />
+  <element id="ArtworkPanel" />
+  <element id="Controls.ArtworkFrame" bdr="45,45,45" />
+\\ --- RATINGS
+  <element id="Panel.StarRating.Default" fg="180,180,180" fg2="65,65,65" />
+  <element id="Panel.StarRating.Highlight" fg="Highlight-Text" fg2="Highlight-Disabled" />
+  <element id="Panel.StarRating.Lowlight" fg="180,180,180" fg2="65,65,65" />
+  <element id="Panel.NotLovedIcon.Highlight" fg="Highlight-Text" fg2="Highlight-Disabled" />
+  <element id="Panel.NotLovedIcon.Lowlight" fg2="65,65,65" />
+\\ --- NOW PLAYING DOCKED IN CENTER
+  <element id="NowPlayingTabsBar.Tab.Highlight" bg="60,60,60" fg="190,190,190" bdr="60,60,60" />
+
+\\ PLAYERS
+\\ --- MAIN PLAYER
+  <element id="Player.Background" bg="Highlight" bg2="Highlight" fg="220,220,220" bdr="Bg-VHigh" />
+  <element id="Player.DisplayPanel" bg="Bg-VHigh" bg2="Bg-VHigh" fg="220,220,220" />
+  <element id="Player.ProgressBar" bg="70,70,70" bg2="80,80,80" fg="235,235,235" bdr="Highlight" /> <!-- bg2 and fg miniplayer -->
+  <element id="Player.SpectrumDefault" bg="Highlight" />
+  <element id="Player.SpectrumDead" bg="Highlight-Trans-Dark" />
+  <element id="Player.SpectrumLow" bg="Highlight-Text" />
+  <element id="Player.SpectrumMedium" bg="Highlight-Text" />
+  <element id="Player.SpectrumHigh" bg="Highlight-Trans-Dark" />
+  <element id="Player.Control.Default" bg="Bg-VHigh" bg2="Bg-VHigh" fg="225,225,225" bdr="Bg-VHigh"/>
+  <element id="Player.Control.Disabled" bg="Bg-VHigh" bg2="Bg-VHigh" fg="100,100,100"/>
+  <element id="Player.Control.Highlight" bg="80,80,80" bg2="80,80,80" fg="Highlight-Text"/>
+  <element id="Player.Volume" fg="235,235,235" bdr="50,50,50"/>
+  <element id="Player.VolumeButton" bg="200,200,200" bg2="200,200,200" fg="40,40,40" bdr="Bg-High"/>
+  <element id="Player.StarRating.Default" fg="225,225,225" />
+  <element id="Player.StarRating.Lowlight" fg="80,80,80" />
+  <element id="Player.Wavebar" fg="75,75,75" fg2="50,50,50" bg="Bg-High" />
+  <element id="Player.Wavebar.Inner" fg="120,120,120" fg2="65,65,65" bg="Bg-High" />
+\\ --- FLAT PLAYER
+  <element id="PlayerFlat.Background" bg="Highlight" bg2="Highlight" fg="Highlight-Text" bdr="Highlight-Trans-Light" />
+  <element id="PlayerFlat.DisplayPanel" fg="Highlight-Text" />
+  <element id="PlayerFlat.ProgressBar" bg="Highlight-Trans-Dark" fg="Highlight-Text" bdr="Highlight" /> <!-- fg is used for the fill colour -->
+  <element id="PlayerFlat.ProgressButton" fg="Highlight-Text" />
+  <element id="PlayerFlat.Control.Default" fg="Highlight-Text" />
+  <element id="PlayerFlat.Control.Disabled" fg="Highlight-Trans-Light" />
+  <element id="PlayerFlat.Control.Highlight" fg="Highlight-Text" />
+  <element id="PlayerFlat.StarRating.Default" fg="220,220,220" />
+  <element id="PlayerFlat.StarRating.Lowlight" fg="Highlight-Trans-Light" />
+  <element id="PlayerFlat.Volume" fg="Highlight-Text" bdr="100,100,100" />
+  <element id="PlayerFlat.VolumeButton" bg="Highlight-Text" bg2="200,200,200" bdr="115,115,115" />
+  <element id="PlayerFlat.VolumeSlider" fg="100,100,100" bg="Bg-Low" bg2="190,190,190" />
+  <element id="PlayerFlat.SpectrumDefault" bg="Highlight" />
+  <element id="PlayerFlat.SpectrumDead" bg="Bg-VHigh" />
+  <element id="PlayerFlat.SpectrumLow" bg="Highlight-Text" />
+  <element id="PlayerFlat.SpectrumMedium" bg="Highlight-Text" />
+  <element id="PlayerFlat.SpectrumHigh" bg="Highlight-Trans-Dark" />
+  <element id="PlayerTopFlat.MetroButton.Default" bg="Bg-VHigh" bdr="Bg-VHigh" />
+  <element id="PlayerTopFlat.MetroButton.Highlight" bg="Bg-VHigh" bdr="Bg-VHigh" />
+\\ --- SIDEBAR PLAYER
+  <element id="PlayerSidebar.Background" bg="Bg-High" fg="225,225,225" bdr="Bg-High" />
+  <element id="PlayerSidebar.Control.Default" bg="215,215,215" fg="220,220,220" />
+  <element id="PlayerSidebar.Control.Disabled" fg="100,100,100" />
+  <element id="PlayerSidebar.Control.Highlight" fg="Highlight" />
+  <element id="PlayerSidebar.Volume" fg="235,235,235" />
+  <element id="PlayerSidebar.ProgressBar" bg="70,70,70" bdr="Highlight" />
+  <element id="PlayerSidebar.ProgressButton" fg="Highlight" />
+\\ --- COMPACT PLAYER
+  <element id="Compact.LeftPanel" bg="Bg-VHigh" />
+  <element id="Compact.RightPanel.Default" bg="Bg-High" fg="225,225,225" />
+  <element id="Compact.RightPanel.Disabled" bg="Bg-High" fg="120,120,120" />
+  <element id="Compact.RightPanel.Highlight" bg="Highlight" fg="235,235,235" />
+  <element id="Compact.RightPanel.Lowlight" bg="Bg-High" fg="235,235,235" />
+  <element id="Compact.Player.Background" bg="Bg-VHigh" fg="240,240,240" />
+  <element id="Compact.Player.ProgressBar" bg="60,60,60" fg="Highlight" bdr="Bg-VHigh"/>
+  <element id="Compact.Player.ProgressButton" fg="Highlight" />
+  <element id="Compact.Player.Control.Default" fg="240,240,240" />
+  <element id="Compact.Player.Control.Disabled" fg="100,100,100" />
+  <element id="Compact.Player.Control.Highlight" fg="Highlight" />
+  <element id="Compact.Player.Volume" fg="240,240,240" bdr="100,100,100" />
+  <element id="Compact.Player.Wavebar" fg="130,130,130" fg2="60,60,60" />
+  <element id="Compact.Player.Wavebar.Inner" fg="240,240,240" fg2="90,90,90" />
+  <element id="Compact.Player.MetroButton.Default" bdr="240,240,240" />
+  <element id="Compact.Player.MetroButton.Highlight" bdr="255,255,255" />
+\\ --- MINI PLAYER
+  <element id="MiniPlayer.Background" bg="Bg-High" fg="180,180,180" bdr="Bg-High" />
+  <element id="MiniPlayer.StarRating.Default" fg="200,200,200" />
+  <element id="MiniPlayer.StarRating.Lowlight" fg="80,80,80" />
+  <element id="PlayerMini.Background" bg="Bg-VHigh" bg2="Bg-VHigh" fg="220,220,220" />
+  <element id="PlayerMini.ProgressBar" bg="70,70,70" fg="Highlight" />
+  <element id="PlayerMini.ProgressButton" fg="Highlight" />
+  <element id="PlayerMini.Control.Default" fg="225,225,225" />
+  <element id="PlayerMini.Control.Disabled" fg="100,100,100" />
+  <element id="PlayerMini.Control.Highlight" fg="Highlight" />
+  <element id="PlayerMini.Spectrum" fg="235,235,235" />
+
+\\ PREFERENCES
+\\ --- PREFERENCES WINDOWS
+  <element id="InputPanel.Default" bg="49,49,49" fg="195,195,195" bdr="49,49,49" />
+  <element id="InputPanel.Highlight" fg="235,235,235"/>
+  <element id="Controls.FaintLine" bg="60,60,60" />
+  <element id="Controls.VerticalMenu.Default" bg="Bg-High" fg="200,200,200" bdr="Bg-High" />
+  <element id="Controls.VerticalMenu.Highlight" bg="Highlight" fg="Highlight-Text" />
+  <element id="Controls.VerticalMenu.Lowlight" bg="49,49,49" fg="215,215,215" />
+  <element id="Controls.DropdownButton.Default" bg="Bg-High" bg2="Bg-High" fg="180,180,180" bdr="Bg-High" />
+  <element id="Controls.DropdownButton.Disabled" bg="45,45,45" bg2="45,45,45" fg="70,70,70" bdr="45,45,45" />
+  <element id="Controls.InputControl.Default" bg="Bg-High" fg="180,180,180" bdr="90,90,90" />
+  <element id="Controls.InputControl.Disabled" bg="45,45,45" fg="110,110,110" bdr="60,60,60" />
+  <element id="Controls.InputControl.Highlight" bg="Highlight" fg="Highlight-Text" />
+  <element id="Controls.InputControl.Lowlight" bg="60,60,60" fg="180,180,180" />
+  <element id="Controls.ListHeader" bg="45,45,45" bg2="45,45,45" fg="100,100,100" />
+  <element id="Controls.LockedInputControl.Default"  bg="49,49,49" fg="150,150,150" />
+  <element id="Controls.LockedInputControl.Disabled" bg="49,49,49" fg="150,150,150" />
+  <element id="Controls.Button.Default" bg="75,75,75" fg="210,210,210" bdr="45,45,45" />
+  <element id="Controls.Button.Highlight" bg="Highlight" fg="Highlight-Text" bdr="Highlight" />
+  <element id="Controls.Button.Disabled" bg="60,60,60" fg="90,90,90" bdr="49,49,49" />
+  <element id="Controls.RadioButton.Default" bg="Highlight" />
+  <element id="Controls.RadioButton.Disabled" bg="55,55,55" />
+  <element id="Controls.SliderLine.Default" fg="160,160,160" /> <!-- sliders -->
+  <element id="Controls.SliderLine.Disabled" fg="70,70,70" />
+  <element id="Controls.SliderButton.Default" bg="190,190,190" fg="190,190,190" />
+  <element id="Controls.SliderButton.Disabled" bg="80,80,80" fg="80,80,80" />
+\\ --- SCROLLBARS
+  <element id="Controls.ScrollBar.Default" bg="75,75,75" bg2="75,75,75" />
+  <element id="Controls.ScrollBarThumb.Default" bg="0,55,55,55" bg2="0,55,55,55" fg="100,100,100" bdr="0,55,55,55" />
+  <element id="Controls.ScrollBarBackground.Default" bg="Highlight-Trans-Dark" bg2="Highlight-Trans-Dark" />
+\\ --- AUTODJ SCREEN
+  <element id="AutoDjPanel.SectionHeader.Default" bg="Highlight-Trans-Dark" fg="215,215,215" />
+\\ --- DOWNLOADS SCREEN PROGRESS BAR
+  <element id="Controls.ProgressBar" bg="35,35,35" fg="Highlight" bdr="60,60,60" />
+  <element id="Controls.ProgressBarButton" bg="70,70,70" fg="200,200,200" bdr="70,70,70" />
+  <element id="Controls.ProgressBarContainer" bg="Bg-High" />
+\\ --- EDIT TAGS POPSCREEN
+  <element id="EditPanel.Default" bg="50,50,50" fg="200,200,200" bdr="85,85,85" />
+  <element id="EditPanel.Highlight"  />
+  <element id="Controls.TabHeader.Default" bg="50,50,50" fg="145,145,145" bdr="80,80,80" />
+  <element id="Controls.TabHeader.Highlight" bg="50,50,50" fg="215,215,215"/>
+  <element id="Controls.TabHeader.Lowlight" bg="80,80,80" fg="110,110,110" />
+  <element id="Toolbar.Background" bg="Bg-High"  fg="235,235,235" />
+  <element id="Toolbar.Body" bg="Bg-High"  fg="235,235,235" />
+  <element id="Toolbar.Counter" bg="Bg-High" fg="235,235,235" />
+  <element id="TagEditorPanel.Header" bg="Bg-High" fg="205,205,205" />
+  <element id="Controls.StarRating.Default" bg="50,50,50" fg="215,215,215" bdr="50,50,50" />
+    \\ Now Playing Screen
+    <element id="NowPlayingTrackInfo" bg="Highlight-Trans-Dark" fg="Highlight-Text"/>
+    <element id="NowPlayingLargeAlbumTrackInfo" bg="Highlight-Trans-Low" fg="Highlight-Text"/>
+
+\\NOW PLAYING POPUP
+  <element id="NowPlayingPopup.Border" bdr="Highlight-Trans-Dark"/>
+  <element id="NowPlayingPopup.Body" bg="Highlight-Trans-Dark" bg2="Highlight-Trans-Dark" fg="Highlight-Text" fg2="Highlight" bdr="Highlight-Trans-Dark" />
+  <element id="NavigatorPanel.Body.Default" />
+</colours>
+<settings>
+  <element id="DefaultIconName">MusicBee</element>
+  <element id="DisableSinglePxBorder">true</element>
+  <element id="FullNodeSelect">true</element>
+  <element id="LibraryExplorerHeaderGap">-1</element>
+  <element id="LibraryExplorerTabsGap">2</element>
+  <element id="MainPanelMargin.Left">5</element>
+  <element id="MainPanelMargin.Right">5</element>
+  <element id="MainPanelMargin.Top">6</element>
+  <element id="MainPanelMargin.Bottom">5</element>
+  <element id="MainPanelSeparatorMargin">12</element>
+  <element id="MainPanelTopBorder">false</element>
+  <element id="MenuBarDock">right</element>
+  <element id="MenuButtonSharp">true</element>
+  <element id="NowPlayingTabsLeftFlush">true</element>
+  <element id="NowPlayingTabsSpacing">0</element>
+  <element id="Panel.ChildHeader.HeightAdjustment">2</element>
+  <element id="Panel.TabSelector.UseRadioButton">false</element>
+  <element id="PlayerInfoCentered">false</element>
+  <element id="ScrollBarMargin">4</element>
+  <element id="ScrollbarNoArrows">false</element>
+  <element id="ShowNowPlayingTabsBorder">false</element>
+  <element id="UseArtworkBorders">false</element>
+  <element id="UseNativeButtonTheme">false</element>
+  <element id="UseRoundedWindowBorders">false</element>
+  <element id="UseSquareCaptionBorders">Always</element>
+  <element id="UseSquareTabCorners">true</element>
+  <element id="UseSystemColors">false</element>
+</settings>
+<images id="Default">
+  <element id="WaitIndicator">
+        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
+  </element>
+  <element id="InProgressIndicator">
+        R0lGODlhEAAQALMPAPDw8Hx8fIWFhcHBwaGhoXNzc9LS0ra2tpiYmNzc3K2trebm5mdnZ/r6+mRkZP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAAEAAQAAAETNDJSau9laXGmzwKY2mdBDRLkC2lg7CLOCnoNjGsQm2IRiGNBIWDIU6MGaSDRxm4ghRa7DjIUXAohKQzpQRYgC0nIbsqDuJxGcNuTyIAIfkEBQoADwAsAQAAAA4AEAAABE/wyRcAmTivlkR2IKMATRk4mBMsUjk4TJE9C9EABZPMD+MkCt4EhBAaGTPk54hAGR+KBIz3KpAIrEwBNChJFqdUoHRT+EAZQaKRfRIAAUwEACH5BAUKAA8ALAIAAAAMABAAAARO8ElHXzEyT0oa0lIiAQ3AgFmjKiDiCCrggs7TDEylOUrwMAgWarJDnR4KxCmgqO0cjEHj4cw4EKSGAAhSqKZDBgkQQiEaBEpVYyhQdY8IACH5BAUKAA8ALAIAAAANABAAAARD8Mn5nKNY2stYfoniJcInLUlTYg6yNPBKOUwaH8Bsx5bZC0CgR9ODwQaXCeDwMFaSGOMCMYwOFiYJkqFIZJ9QX5gSAQAh+QQFCgAPACwAAAEAEAANAAAEUfDJSadzNcuLZ9FPcFnOIDHUwnThaDHLozjBIzTDRxIPsACPRKMBUKAeCOGwQSAsGwlERwEYJnq/B8ElKQwagpDsoaqsahOYJrGi0EA6C6gSAQAh+QQFCgAPACwAAAIAEAAMAAAESPDJ55yaGDNFHMoZAjQAwzigZDRsM6SSUxAjG2BfUlGS8FyUXVB4Qv0ePl4l8fhMAi0AoWBMDVoNA8xhGgGcMIRHwYBNFEJJBAA7
+  </element>
+  <element id="LastFmLove">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDklEQVQ4y2NgGH7gv5t30n8tw0v/tQwu/7d2bmNgYGD4b+3c9l/L4PJ/LcNL/928k5DVM6JotnVuY/jwwZHBy8WDQVz8F8PSlcsYvv9UYeDkuM2Qkx7FcOMGO8O2PTsYBAT2Mx7eW4Vpu5bBtf/l5fwoYn6h3ij88nL+/1oG12B8JgZU9/xn+PhREEVo0+qtKGo+fhRkYGT4j90AWek+hiOn1vxvaGDCGj4NDUwMR06tYZCV7sMdiI4ehf91jM6iG/K/oYHpv47R2f+OHoWEY8LBtfy/jvFJmCEQzcYn/zu4lhMfna5e2f+1DS/+Ly/n/69tePG/q1c2OWki+b+WwbX/bt7J5Ces8GgLhuENADVfarBOAXBGAAAAAElFTkSuQmCC
+  </element>
+  <element id="LastFmLoveSelected">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOvwAADr8BOAVTJAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAAAtElEQVQ4T2N4/vw5AyWYIs0giweZAbdu3RIF4nVA/A2INwKxMciZQFoXiFcA8SsgXg1SBws3FC8AJRYB8f87d+78B9FA/AGIzaD0/9u3b8PEF+EyAKwIZACSIWBNMDGYIUQZANOETBMyoAvZNnQDkLzQiMsFzEADeqH+hzsbzTvtQHlmrAbABIEKbJANgbFhsYKccnEmJKBiISSNoIAUwpbk8aZEoCY2qCGcuPLLIEvK5GRrANIa6Y0VeHSpAAAAAElFTkSuQmCC
+  </element>
+  <element id="LastFmLoveBright">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAAAtElEQVQ4T2PYv38/AyWYIs0giweZAZs2bRIF4nVA/A2INwKxMciZQFoXiFcA8SsgXg1SBws3FC8AJRYB8f8tW7b8B9FA/AGIzaD0/82bN8PEF+EyAKwIZACSIWBNMDGYIUQZANOETBMyoAvZNnQDkLzQiMsFzEADeqH+hzsbzTvtQHlmrAbABIEKbJANgbFhsYKccnEmJKBiISSNoIAUwpbk8aZEoCY2qCGcuPLLIEvK5GRrAMfOcY04HygNAAAAAElFTkSuQmCC
+  </element>
+  <element id="LastFmNotLove">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAAAtElEQVQ4T2PYv38/AyWYIs0giweZAZs2bRIF4nVA/A2INwKxMciZQFoXiFcA8SsgXg1SBws3FC8AJRYB8f8tW7b8B9FA/AGIzaD0/82bN8PEF+EyAKwIZACSIWBNMDGYIUQZANOETBMyoAvZNnQDkLzQiMsFzEADeqH+hzsbzTvtQHlmrAbABIEKbJANgbFhsYKccnEmJKBiISSNoIAUwpbk8aZEoCY2qCGcuPLLIEvK5GRrAMfOcY04HygNAAAAAElFTkSuQmCC
+  </element>
+  <element id="PlayerLastFmLove">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEfSURBVDhPtZLNSsNQFITvwh/82XXjK6RKkiYVtZaI7hQURIKrdtldF30AoRvb1xDpqj6FLupG8Kfg64xn7j0JBsSkoAMHbubMN1ySmD8Rer1l+Lt3qIcvMq/YiR6RJBe6NmgfnWM7erI7ZkLJCuOWw+GSXQTxBGfpFtLBGlrHV/CCD8QHN3Z4pscdM8ySEdYgaN7Dbz7Ytm9Cp7NhQS+Y86x2LvjxlKyRpjdcdmvqFyTXXOfoY0FkyBp44btcZUX9yiJDVm7QeMZhcq1+ZZERdiaHk1N4/ifSdFN3pWLWMsI6I9q/tS+rQomDJSuMWk5o7I3KSnJYsmoV9VtJKZzpp5LKcKa8pN9fdZ9rATiTLeFPxlkUziTgmKOP/yFjvgCf07SsyD5+nwAAAABJRU5ErkJggg==
+  </element>
+  <element id="PlayerLastFmLoveBright">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAAAtElEQVQ4T2PYv38/AyWYIs0giweZAZs2bRIF4nVA/A2INwKxMciZQFoXiFcA8SsgXg1SBws3FC8AJRYB8f8tW7b8B9FA/AGIzaD0/82bN8PEF+EyAKwIZACSIWBNMDGYIUQZANOETBMyoAvZNnQDkLzQiMsFzEADeqH+hzsbzTvtQHlmrAbABIEKbJANgbFhsYKccnEmJKBiISSNoIAUwpbk8aZEoCY2qCGcuPLLIEvK5GRrAMfOcY04HygNAAAAAElFTkSuQmCC
+  </element>
+  <element id="PlayerLastFmNotLove">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADcSURBVDhPtZJbCsJAFEPbKugeCopuwY/Wb0XQFfihIL7A/S+g5rQZcfBVQQMH7iQ3g7ZNfqKqqjIxEztxEGsxdEw+sEfGzlxkIUzFXixEn0CMxElMDDMeGTvs0km5gMOqvu1O8jqCInRs3yRvKRYM/Kye/UgUwcdIdOgyHEXzf74QHboMWzG231p0xIYhFxfRdfZR7LqTB6MQZ4LaeCN2vFvYaiSjdPDyEjLvlLZiEXjh4RI8Z8/LQSx48XYJs7335SAWXeBVQftykAo8WD4yiB9YW6k4BR//oSS5Ah7UJmgUkZ5EAAAAAElFTkSuQmCC
+  </element>
+  <element id="PanelLayout">
+iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAAM0lEQVRIiWNgGAX0BK9fv/5PKqbYQnx8QupHLRy1kKhUS3ULSVE/auEItZCuZekoGBIAAMYr94HFLMaUAAAAAElFTkSuQmCC
+  </element>
+  <element id="PanelLayoutDisabled">
+iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAAM0lEQVRIiWNgGAX0BK9fv/5PKqbYQnx8QupHLRy1kKhUS3ULSVE/auEItZCuZekoGBIAAMYr94HFLMaUAAAAAElFTkSuQmCC
+  </element>
+    <element id="PanelNewTab">
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAI0lEQVQ4jWNgGN7g9evX/0cNIMGA169f/ycW08YFowYMIAAAnoROwZufT74AAAAASUVORK5CYII=
+  </element>
+  <element id="SearchResultsIcon">
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1klEQVQ4jc2SsUoDQRiE10IDIqTOAwRUMCCkTJuHUiwsBONjWKQ2r2B/qcI1WZJKrrjiyO3+8yEpxM4iJLsgEZx2mI/hn9+5fyXvfUfSA7AEPoGVpKe6ri+y4bIsz4B3SW9mNvDed2KM18BU0ryqqvMkwMzuJM2ccye7nqRXYJIESFpIGu7z2rbtS/rIATZN03QP+cDXvnZHbXCfucFLErCzwk1RFKcxxitgCqwl3SYBzv38wSPggS2wBp7NbAz4EMJlFnJIIYTRsSDL1FpZSer9Ovwn+gZY2cZuENOVQQAAAABJRU5ErkJggg==
+  </element>
+  <element id="FormBorderBottom">
+        iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAEElEQVQImWPQ0ND4z4BKAAA1ogXdQLPc3QAAAABJRU5ErkJggg==
+  </element>
+  <element id="FormBorderBottomLeft">
+        iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWPQ0ND4j4wZSBcAAAkpF3GhSnNLAAAAAElFTkSuQmCC
+  </element>
+  <element id="FormBorderBottomRight">
+        iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWPQ0ND4j4wZSBcAAAkpF3GhSnNLAAAAAElFTkSuQmCC
+  </element>
+  <element id="FormBorderLeft">
+        iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAADklEQVQImWPQ0ND4j4wBLNUF3dZ92WcAAAAASUVORK5CYII=
+  </element>
+  <element id="FormBorderRight">
+        iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAADklEQVQImWPQ0ND4j4wBLNUF3dZ92WcAAAAASUVORK5CYII=
+  </element>
+  <element id="FormBorderTop">
+        {3}
+  </element>
+  <element id="FormBorderTopLeft">
+{4}
+  </element>
+  <element id="FormBorderTopRight">
+{5}
+  </element>
+  <element id="FormMaximiseButton">
+        iVBORw0KGgoAAAANSUhEUgAAABwAAAAPCAYAAAD3T6+hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAvSURBVDhPYxgFIPD///+nxGKoFsoAsQaNWkg0GLUQBkYtJBoMiIXEYqiWEQsYGAAffptR4t2NmgAAAABJRU5ErkJggg==
+  </element>
+  <element id="FormMinimiseButton">
+        iVBORw0KGgoAAAANSUhEUgAAABwAAAAPCAYAAAD3T6+hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAhSURBVDhPYxgFo2AUkAX+////lFgM1TIKRsEoIBYwMAAAIKgqt/ENDuAAAAAASUVORK5CYII=
+  </element>
+  <element id="FormRestoreButton">
+        iVBORw0KGgoAAAANSUhEUgAAABwAAAAPCAYAAAD3T6+hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAvSURBVDhPYxgFIPD///+nxGKoFsoAsQaNWkg0GLUQBkYtJBoMiIXEYqiWEQsYGAAffptR4t2NmgAAAABJRU5ErkJggg==
+  </element>
+  <element id="FormHelpButton">
+        iVBORw0KGgoAAAANSUhEUgAAABwAAAAPCAMAAADAkV+TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACpQTFRFXV1dX19fNzc3WFhYYGBgMDAwW1tbU1NTR0dHXFxcZmZmPz8/ampqFBQUW6/d0AAAAFpJREFUeNqckEkOwDAIAx3IXuf/320i9QZUVefiw0hgwHoBH2VD2qB5MvEBVhZSTypppXCWk53TGSuyREcmh9+27o25lkjm+M5GxFLQY7nbXKHs0F+/tdwCDACmNxPTbvboMgAAAABJRU5ErkJggg==
+  </element>
+  <element id="FormCloseButton">
+        iVBORw0KGgoAAAANSUhEUgAAABwAAAAPCAYAAAD3T6+hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB1SURBVDhP7ZJBCoAwDAT7oYI/7Gt9R+zCBmJoFDQ56YCUTcrOobYfICL7/DbGJdjjHuM7tCyS3u0fEZVG8xR8uc8lGMkolylGNjiqY0q6ynh2rvIxMv+G+VKUsvz0Zsic50lRxtLlD4I59znSK5miUsbP0toBHoLFA6oNDnwAAAAASUVORK5CYII=
+  </element>
+  <element id="FormHelpHighlightButton">
+        iVBORw0KGgoAAAANSUhEUgAAABwAAAAPCAYAAAD3T6+hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPhJREFUeNpiYBjugJFYhXV1df/V1dUZODg4UMR//PjBcPPmTYampiZGqlm4du3a/3JycnjVnDp1iiE7O5ugeUyEFERERMAt2717N4OpqSkjMgaJgYCZmRlRIUXQQnZ2djD98+dPhkuXLmHIv3z5Ei5PDGAhpGDhwoWgYPoPYq9YsYIxPj4eHJfi4uJwDAKgeKSKhUiWgoG+vj6Dra0tig9v3boFjkOqWYgNgCzy8fFhJFUfE6kaPnz4AKY/fvxIlkNJtvDhw4ckBSHFQRoaGgpOKGpqaqBM/3/mzJkkBSszqRaKioo2gEqbc+fOMXR1dTEyjAI0ABBgAIddWND+D6ZJAAAAAElFTkSuQmCC
+  </element>
+  <element id="FormMinimiseHighlightButton">
+        iVBORw0KGgoAAAANSUhEUgAAABwAAAAPCAYAAAD3T6+hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABZSURBVDhP7ZExCoBADARzd2jpD+x9gPj/n8VZSCeIAbkqA1NlNxBiRfE77t5xwfWDyvWo5qHccMMDT7xe1Fw55VusyEFx4I4ZlB+xIgfFuRcKyvN+WBRPzG5LkuSJP3ugKAAAAABJRU5ErkJggg==
+  </element>
+  <element id="FormMaximiseHighlightButton">
+        iVBORw0KGgoAAAANSUhEUgAAABwAAAAPCAYAAAD3T6+hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVDhP7ZU7CoAwEERDiKksvIe9hV7F+18jzoMVRAgmElKIA68wuzPrN7onpZS8GEQsgD5v1nphFpOYxVIAffS/GypjsJAa0R8sok4ycps4c7SLVdyvClinjjiOFlEnjBaANjGK6zM7YZ06ajYwG8S61dE/MC+MFoC+P7D7W9rlO+y+0/TdSxFm0ehv4dwBBMeECxznUOEAAAAASUVORK5CYII=
+  </element>
+  <element id="FormRestoreHighlightButton">
+        iVBORw0KGgoAAAANSUhEUgAAABwAAAAPCAYAAAD3T6+hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVDhP7ZU7CoAwEERDiKksvIe9hV7F+18jzoMVRAgmElKIA68wuzPrN7onpZS8GEQsgD5v1nphFpOYxVIAffS/GypjsJAa0R8sok4ycps4c7SLVdyvClinjjiOFlEnjBaANjGK6zM7YZ06ajYwG8S61dE/MC+MFoC+P7D7W9rlO+y+0/TdSxFm0ehv4dwBBMeECxznUOEAAAAASUVORK5CYII=
+  </element>
+  <element id="FormCloseHighlightButton">
+        iVBORw0KGgoAAAANSUhEUgAAABwAAAAPCAYAAAD3T6+hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEASURBVDhPvZW7TsNAEEVNbAkqBF2oA/kV8ksUUCQFBR/tnBPNWGsLKfEjvtLRambnkX051TW1bbuBBmp4CHdP+mPeuE24x8tkeIY9vMET9Jpqh99544yf1pREf7FF1De8Q9fUMWz9zivjm0uBsSLRbdpCFjtBNnX12Uy/Ms74OkqME4mu4BHKoo4f8Bpj6TfO+H/P+iaZDMOV/MEhRpXNuu2eJYtEMVeUTVLa+pdplqKYZ/YCn1BKW//05zAUxcpt/YVS2nfZzh38gBqeoX7n5zU1Gbx1ZbMjlLdUW2XT6beUxHyHX6AsnttXvsNsatysd7j6l2bdb6kyGRb6t6iqMwCfWjUQIYUFAAAAAElFTkSuQmCC
+  </element>
+  <element id="AzJump">
+        iVBORw0KGgoAAAANSUhEUgAAAAsAAAANCAIAAADwlwNsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALVJREFUeNpiXLx4MQNewALEWlpauKSvXbvGxEAIsMBZq1evDg0NBWo6duwYRATIRah48uTJxo0b+fj43N3dIZbW1tby8/M/ffoUasuKFSumTp26ZcsWCBcoXVJSgmLLhQsXgMrfv3//8ePH69ev6+npAQ2ASDEHBQWdO3fuMxgICAjcu3dv9+7dcANev34NMuPIkSPNzc0QoZiYGEVFxTlz5sBdyggMMUrDg7gQAxqFRwVAgAEAl4VQxvpngooAAAAASUVORK5CYII=
+  </element>
+    <element id="PanelBack">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVQ4jd2OMQ5AUBAF9xZqzqCm58pO5Dcv2T/bUmhFsRLEJK+cyTP7L5LatAxMwFprbdIy0Gfk+R3ZzCwiljjYrgboNODuI1DcfUg9+FxkAIqkLh25JT/KDgmof+Wgw5n/AAAAAElFTkSuQmCC
+  </element>
+    <element id="PanelForward">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAWklEQVQ4jeWSMQqAQBAD7xnW+gVr7fXLvkibwN6k1cbCTlhQBAMpZ0iRUv4RSW0arrU2wArMaQnQn5Lp4xJAtveb2vaSWhARA7BFxPg6PKZhSV0avkjyT3w8B6gkf+nogrzNAAAAAElFTkSuQmCC
+  </element>
+  <element id="Delete">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZ1JREFUeNqkU83KQVEUXef2lZKEiYkJBpgqJiYmSAzlAZRkhgzIQGYGMvQGvAFFKH8DigcQnsALGGh/d5++bhf3Dr7s2rdz9tlr7X3W3UcQEb4yJkgkEtTr9Sgej9N/cOw/vHG5XAiHwwiFQrBarTSZTIQZkIt5PB5eyhxFfhQFp9NJEtXrdZRKJTIDF4tFeL1eLSa4DSEEkskkqS47YdtsNmi321on3W6XotEoVqsVOp2O0LTTi/hXgZbLpfRmsykPW62W3KtAetdA60Bv2WyWcrkcAoEAns+njJ3PZxQKBaEn+OjgnUTVhdbrNU2nUzL7C4qZWOVyWa5tNhvsdjsWi4VhJcUIXKlU4PP5cDweWVRxvV7hdDpRrVbJcCD04Pl8TrfbjYbD4Utyv9+n7XZLnGN4BT7I5/PgIblcLhiNRi+FarWauN/vyGQyxlfw+/0snGQ9HA4Yj8cf0zgYDBCJRJBOp+mDIBgMwmKxQG1fEhjZbDYTPGAOh0OLybcQi8Vov9/D7XZjt9vh8XiYPqJGoyFSqRS9jPI39ivAAIYq2ynZxR8/AAAAAElFTkSuQmCC
+  </element>
+  <element id="MiniPlayerNowPlaying">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAChJREFUeNpiYBhowAhjHD566j8pGm2tzcB6mUa9MOqF4eGFgQcAAQYAjeUQDUt3Ns8AAAAASUVORK5CYII=
+  </element>
+  <element id="MiniPlayerNowPlayingBright">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAC5JREFUeNpiYqAQMFFqAAuMMXvuov+kaExNjmOkigsYRr0w6oVB4QWmATcAIMAAYhsQIZ16hDIAAAAASUVORK5CYII=
+  </element>
+  <element id="MiniPlayerLastFmLove">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKlJREFUeNpi/P//PwMlgImBQjDwBrAgc86amIgCqZlA7AHEu4G4CSQMxLpAXA3ETkB8EIizjM+ceY1hABD0AnEglO0HxPZA7AbEu4CYHyoeAsTfgTgOmxdi0fggTSeRNGOoo3ogdhOprwmXAZVA3EdAcwc+A/4CcTEQ2+LQbAK15C/WaEQCR4BYGIjfIomB+O/wpgM0AFLMDsQ/gZgLGnUYgHHoZyaAAAMANqIhDnrEvjgAAAAASUVORK5CYII=
+  </element>
+  <element id="MiniPlayerLastFmLoveBright">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAAAtElEQVQ4T2PYv38/AyWYIs0giweZAZs2bRIF4nVA/A2INwKxMciZQFoXiFcA8SsgXg1SBws3FC8AJRYB8f8tW7b8B9FA/AGIzaD0/82bN8PEF+EyAKwIZACSIWBNMDGYIUQZANOETBMyoAvZNnQDkLzQiMsFzEADeqH+hzsbzTvtQHlmrAbABIEKbJANgbFhsYKccnEmJKBiISSNoIAUwpbk8aZEoCY2qCGcuPLLIEvK5GRrAMfOcY04HygNAAAAAElFTkSuQmCC
+  </element>
+  <element id="MiniPlayerLastFmNotLove">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANxJREFUeNpi+v//PwMlmImBQjDwBrAgczZv3swNpHyAWAWI7wHxQV5e3mefP38WB7JtgVgRiB8C8VZfX9+vGAYAgRsQazIxMTH8+/dPHciWB2peDKRjgZiDkZERFHBaQPZvIF6PzQv6IEVgCSawFAcQp4JoEB8kB5XXx+oFjABiYiI5EI+C4hYXgMU9KGxwuWAvyFCg/y3RXQAUgzGP4DQAGOIgVTuBAXcdSCeBNEEDFKZkFihWCKYDoKJHQKoTzeZOdM14ExJQ8Xcg1QzltkL5GIARX6ANjbwAEGAAT+Z2OuFrEfgAAAAASUVORK5CYII=
+  </element>
+  <element id="NoArtwork">
+        iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAIAAABEtEjdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABVhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTUtMDctMDNUMTI6MDI6MTMrMTI6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTUtMDctMDNUMTI6MDI6NDUrMTI6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE1LTA3LTAzVDEyOjAyOjQ1KzEyOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpENTE1QkMxQjIxMTYxMUU1OTQ4M0VEMjk3Qjc1RDVFQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRp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
+  </element>
+  <element id="UnknownArtist">
+        iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAMAAAC/MqoPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVQTFRFV1dXNzc3VlZWSEhIVFRUPDw8QUFBTk5ONjY2PT09MzMzSkpKOTk5SUlJRkZGTU1NT09PRUVFQEBAUFBQUlJSQ0NDUVFRVVVVNDQ0R0dHNTU1REREPj4+Ozs7U1NTTExMODg4Ojo6S0tLPz8/QkJCWFhYMjIyLMlQ+wAABMBJREFUeNrs3el2IjcQhmFtva/0DhiwPVPc/yWOM0l+5SSxsaQuoe+9g+cI46Zbqhb3aBOggw466KCDDjrooIMOOuiggw466JHT8yRtq2wxSpBQZsmqNk3y56fXqR4V/TM16rR+YnpyyAT9eyI7JE9Jr+eM/r9srp+NnmhDn8vo5JnoRaXo86mqeBZ60nwF/hvfJM9Al62hr2daGTx96Omx+iFsujwKejRxlAHTi46+U1cES08n+l5TGia9PAj6buJQBkjPNdlI58HRZUN2amRgdFmRrSoZFD1vyF5NHhC91GQzXYZDP5DdDsHQU2GZLtJA6MVEtpuKIOiyI/t1MgT6kVx0DIA+CCd0MbCny57c1Evu9JZc1TKnJ8YZ3SS86Q25q2FNL5RDuio40ytyWcWYniindJXwpWtym2ZLr41juqm50mdy3cyVnjmnZ0zpCbkv4Uk/eKAfeNIzD/SMJb0WHuii5khPyUcpR7r2Qtcc6aMX+siQnisvdJXzoyfkp4QfPfVET/nRW0/0lh+98kSv+NEzT/SMH33xRF/40Y0nuuFHV57oih9deKILfnTyFVYdf+v4hsf/dVzN4Roev9zwex13aXBvDndkcR8eT1/wzI3n9RzPJ60xP1+PeFdFxHtpYt5BFfG+uYh3S8a8RzbindEx74eP+BREzGdfIj7xFPM5t4hPN8Z8pjXmk8wRn1+PeWpBzLMqYp5QEvFcmpinEcU8gyrmyWMxz5u7Rzxl8B7zbMmYJ4reI54je495evA94pnRv7/uYp0U/nvlY50P/0fRvhXgz6WP9F0Qf619pG8A+fuHTZzvfeET6KCDDjrooFtok/Xlx9zq965fJrMqJZRazbT03btu5x+XWm7PRy9fP65ibv20/uf1+zr1t4+rm9fySehlXpyrcf38fSqxjtW5yMuw6eXri86uD92eumb6xe3yO6SXxTkz37kTL0x2Lsrg6PlLY+cA1Ni85AHRT4We7G0uEJMuTkHQy7odrW+qGNu65E7PX7rVyQaqtbP9wbdLl+fF3YEvsZwlV3p9nMht05HlKYi3o49hFeb4xo0utbcpHVpyosv5Sv66zpILvRx68ls/lCzo9U2Q78St3p++zSvt0TpvO9PfOtqr7m1Pepka2i+TlrvR84r2rcp3ol8W2rvlsgs9XWn/1tQ/fTso4pA6bJ7pJy2IR0KfvNJPN+LT7eSRLjvi1GOnocQTyB+0P0LPuck/7LkX+umd+PV+8kDfGuJYs7mnt4IlXbTO6SlxLXVMvxi2dHNxSs974lufO6SXDXGuKd3RB8Ga/rXBBl+iy4l4N0lXdE3c047ohWBPF4UT+pYR/7LNBX2gEBoc0LcxCPq42aeHsehfWPZP08s+EHpf2qYXFEqFbXoVDL2yTJdrMPRV2qX/pHD6aZfeBUTvrNKlCoiupE36QCE12KQ3QdEbm/QlKPpikS5FUHQh7dELCqvCHn0OjD7bo+vA6NoevQuM3tmjj4HRR3v0a2D0qz26Coyu7NFFYHRhj06hBTrooIMOOuiggw466KCDDjrooIMOOuiggw466KCDDjrooIMOOuiggw466KCDDjrooIMOOuiggw466KCDDjrooIMOOuigs6X/EmAAosiImhdtMAMAAAAASUVORK5CYII=
+  </element>
+  <element id="WaitIndicatorArtwork">
+        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
+  </element>
+    <element id="AddTabIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEhJREFUeNpi/P//PwMlgHGYG5CVlQWSZJw2bRpONUwMFIKBNwAlDKB+xguA4cGIzGdBNxCN/x+LGHYvPHv2bIhG4zDICwABBgAKjC2utYAUsAAAAABJRU5ErkJggg==
+	</element>
+	<element id="AddTabIconInCaptionBar">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAI0lEQVQ4jWNgGAV4wYcPH/6PNAM+fPjwnxCmrQuGoQFDAwAA1v1AwJFRcx8AAAAASUVORK5CYII=
+	</element>
+    <element id="CheckTick">
+        {7}
+	</element>
+	<element id="CheckTickDisabled">
+		iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEdJREFUeNpijIqKYsABYplwSMQD8XQmHBJTgTgbJPkFKoAiAcQLWaAMkIAEENfCJEAqWWAMIJgHxFlIfLAkA5LAQmTLAQIMANehDVQloTuVAAAAAElFTkSuQmCC
+	</element>
+  <element id="MusicLibrary">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALJJREFUeNpi/P//PwMlgAWb4PPnzwmaKikpyYjTAGQFhCxgYqAQUGwACx5n0tEFuGwDBiRB17EQYwtQAyuQmgbEkUD8F5sXQApmA/EXIP6IxYzpQOwCxIFAXIvNAJwKoCACiNOBXtoNpG8A8Vd0L4AUBAExSAEjTAGSX0HO1gLyf0MtW4FuAFgBEGMogIIqIG4DYmYgXgnEmTAJRlBmApqcjaYgA2oYvryAMGBAkzJAgAEAuOw+OLQ8hUoAAAAASUVORK5CYII=
+	</element>
+  <element id="BookmarksIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIpJREFUeNpi/P//PwMlgAWZ8/z5c4KmSUpKMuI0AAoY8ej/j9cFSLZg1Q10IYYYEwOFYOANYMEnCfRzGZDqItkAaGCBNLdDhbpI9YILEJcCcSWUdiHFBSDFy4E4Eoj3APE5JD5RLkDWzAClI6HiRBmArJkBzRCCBrhi0YxsiCtGuqc0N1KckAACDACXcSNzYxo4BwAAAABJRU5ErkJggg==
+	</element>
+    <element id="PodcastsIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAOlJREFUeNpi/P//PwMlgAWb4PPnz7WB1AogVgPiW0AcISkpeRWbWiYcBq8E4qdA7ACl15DkAiBQBeIkID4FxHVAfAyXAUwMFAKKDWBBCrg/QEofiK/iCFgQBQrci8AAZcHmgs9ArAVl3wbiJiC2gNK3oeIg+U+4vHASiFOh7HAglgHig1A6DCqeCg1YrLFQBjWkAIgnALEOmi9A4rZAbI7LgEtAnA3EU4HYC4hnQ52uCrXZFip/CV86mAfEp4G4C4hnATEvNGxOALEZEF9GD1xGfHkBGPIgSUZgqJOfDvBpJugCuqREgAADACy4OYbWb7j8AAAAAElFTkSuQmCC
+	</element>
+    <element id="RadioIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPhJREFUeNpi/P//PwMlgAnGeP78OQhb4lMMlDcDqcNqABDoAfE+oAJnHJrtgNRBqDo4YIR5AahgB9RANyDWBuIVQKwDxFeAOAKIrwLxLiD+Iykp6YXNBeZAPBvKXgnET4HYCkqvgYqD5C2QXcCCxBYA4mtQNsgFSUB8CojrgPgkVBwkL4grDD4AsRaUDXJuE9Q2EH0DKg6Sf4/LAJAtqVB2OBDLAPFxKB0GFU+FugqrF8qghlgCAwmkUQcYsKAQ1gHyYVFsCw0rrC64BAo0qGYMABW3gqrDagBI0Xl8CQmbPBOSJFFJF10dEwOFgGIDGKmWG8kFAAEGAHJHSPnpXQMjAAAAAElFTkSuQmCC
+    </element>
+    <element id="AudiobooksIcon">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIJJREFUeNpi/P//PwMlgAVEPH/+XAFIdQCxNRCLA/FLID4KxHeAWAWLeIWkpOQDkF4mqEGrgfgzEOcBsRmUBvErcYivhjsB5IVnz579B2IwGxnjE4exmRgoBKMGDAsDWJDYK4BJGj3J4hPHMACWZO8DsSIQexEQBwNGSnMjxWEAEGAAMXNZQiyJXNgAAAAASUVORK5CYII=
+    </element>
+    <element id="VideoIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAT1JREFUeNqkk79LA0EQhS9BRFAbu2uVQAQlgopVbIRUYmG0E/8EQQtrLa1SWwbtNFZWYioLwUIxWgSCP7rDWgM2cn4rLzA32N3Ad8vNvns7c7tbSNM0yhND4ZEkic3VYRdmYAy+4Bka0BqI4jj+G4vmw2G4hFN4h21Y1PimfJgfsasVQguq4ArKUIPuP9WWpQlzNV/BOlRhRYI7mHcGXc1Xpc8YhJ7PoKf3UPqtyp4wJj3p9rxBBS7cijuq4hX2jfYcZr3BuIQ2bmAa7uHI7MALjHqDT5h0BkvwCAtwCBvKT0HfG3Tsj1Ecq+cSHMCP8sHoyRuEQ7Ip8cBwWeIPY1qSruENQn/X0NZ+V7QL/hy0pWt5g0jOYeUHaMIazGlsKt+RLnsXFN+wau7Cif52Xz1v2ZUzRzlPFKOc8SvAANe3TfoRyelwAAAAAElFTkSuQmCC
+	</element>
+  <element id="InboxIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJhJREFUeNpi/P//PwMlgImBQkCxASwg4vnz5yT7Q1JSkhGbC7qAmB0kiY5B4lB5nF5wA2I/IP4JdFE6siIgPw0kDpV3Q5ZjBMUC1AuMULEMIK4H4g9AvBCI44FYAIgbgXgGVM1/XF5ggCqSB+JNQFwHpeWRNDMQcgExAO4CFrSQJUo30EIqpwOYs5BNJhYwDv28QLEBAAEGAMxPNArndmCMAAAAAElFTkSuQmCC
+	</element>
+  <element id="PlayHistoryIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASVJREFUeNqkk7FKA0EQhi9BVDA+wLVKIEXENJaphFRioUkXfAFt4oMklQ8QtNNYWYl5BiFaBILR7h7ABOzOb+QX9oYLCrfw3cLsv//uzM2W0jSNiow1+yRJEsZOoQd1qMACXmEAo19RHMc/cznYuA4PcAMfcAYHmt8Vt/XN8LSSpaAbPEINWjDNuW1NGltr+RucQBMO3ebUhBJPtd6UPmNgOd/C7I+azaS79Ab7cP/Pwt/BnjfYhnmemvqcu9AbbHmDT9jJ2X8BfWeyC0tvMAkLE/zrK+XbD8JtePEG1iQdqLrr22QmGwpVpRt4A+uwJxjrf0cr+mAs3cgbRHK2VJ5hCMfQ0DxUfCJd9i1ofMFR8BauVe2lcu6GJ2daucgoRwXHtwADANwIS/q1f228AAAAAElFTkSuQmCC
+	</element>
+	<element id="DownloadsIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAINJREFUeNpi/P//PwMlgAmf5LNnz/4DMfkGUOyCEWIAI3o0AkP9K5DKAuKFQAySZATieCCeJiUlxY1uAAsWQ3NAipH48VB+DjYXYDNgPhD/QzJkGpKLiDKAAUnxAnya8RkAM8QKn2asgYgWoGAaGHjEGQBK+4SiDWgYI9EuoEtCAggwAA/FLXdDJfx0AAAAAElFTkSuQmCC
+	</element>
+	<element id="PlaylistNowPlayingIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADtJREFUeNpi/P//PwMlgImBQoDVgOfPn/8H4gF0ASEAciF1XUCKnwcmDPC5cGBiYXAZwDg4MxMpACDAAG1XHQgfFQpnAAAAAElFTkSuQmCC
+	</element>
+	<element id="MusicExplorerIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAR5JREFUeNqk00FLAkEUwHFHAi8idFwEoQ5665B06OSnMMhTUMc8KX6aOiT4CQqKUNBL5aEuXspL4sG9ePMDrP8Xb2AaHRR24Mfuzhtn35u3miRJMmnGgT8Rx7FcSrjDOd5xg3kURRsbZAMb32OGM/ziIZSB8UvQDFaoYooyJsjtzEB/LGOMNipoaRlufGcJQ1ziEw0MQiVs26CAJi6QRx23Or/XBh2t+VmfX/S5EzxEp7YivlHDl7PuFCM9k4VM2AO1GUjfX7Vl0oGl96Klzs90Xckvwfb9BI/o4dDRxZPG/30XtoS/vpPWlHvp+8+WcitOfMJ9zs3gQ/pO0PZd2mhYZOSKvhd/80u4xpH2/RhX3tuDcZP235jNpBxrAQYAfudf3vmOrNsAAAAASUVORK5CYII=
+	</element>
+	<element id="PlaylistAutoDjIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAOhJREFUeNqskTsKwkAQhrMqIqgHyA1SKFaWVoEcIPbeQS/iFQzY+aisPIYoCMFHtxewX/8Js2EdIsbowJeBeWXmX2WM8X6xBn201m5sDKagBzrgAY5gDja2yPf9zNecxibYgSW4gwkYsr9xnPIt92+KTuAN9iAAETgXbBtwDeUiuUEMRiB80+xxPOS62AbtALp5BdIPmqVcN5MDBmBbUvg16MsBXXAtOeAC2nIA2QEsgGGfPRWL5cZPoC5fgZKKi3JvlS7KI6fkBpXMDlBf9qkiDapv4IiV8J2JqHuJW21yEf+hQWV7CjAAr/NCcDp0GjwAAAAASUVORK5CYII=
+	</element>
+    <element id="ManagerIcon">
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAK0lEQVQ4jWNgGDTg27dv/4nFOA0gZAFedUPDAIrCgKCaUQOoZADZyXhAAQBVMLJvd4MvCAAAAABJRU5ErkJggg==
+  </element>
+	<element id="PlaylistIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFlJREFUeNpi/P//PwMlgImBQsACYzx79gzsFCkpKUZkPjYAU4NiABAwoqljpK8XgOA/ms3YvMAIdD5OAwbGC0xoXviPhY+C0WNn6MUChssYBzwvDLwBAAEGAPddHiL+5ZJwAAAAAElFTkSuQmCC
+	</element>
+	<element id="PlaylistAutoIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAF9JREFUeNpi/P//PwMlgImBQsACYzx79oyQUxih9H8pKSlGDAOQFAyQF0BOI9ILOA0YGC8woXkBHcOAJxYxkrywDYhtoezDlHjhP6mxAHOVN5LN3igKBjwvDLwBAAEGAF3fGHhEt51jAAAAAElFTkSuQmCC
+	</element>
+	<element id="PlaylistMixerIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJZJREFUeNrEU1EOgCAIldYpvEsHUO+bB+guegwCp4sauZofsjlQefgeKiCiGbHFDNragpRSo+KttZHmjuJd5EL1SPugMYA6ChgAGOzF+mcJBUy98eTjnx5gHQXMMsg7sd7vgaRJJ5ucM4exR/9Z4KLy42o1CajQfpWiSlCMb2Sr8THykLoMNOGNVRAnh1vC9L8wv8ApwAC6WDjiVjTUpgAAAABJRU5ErkJggg==
+	</element>
+	<element id="UpcomingReleasesIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGtJREFUeNrcU4EJwDAI09Er/P81fSOrUEFKC9scDBYQQ5AQpWUAlGFmLrCIXNIPKoI9wXC/hZ6EvbdsNjoSz8A0884K5CuoKnoFp+C5su7zoZcTtMVxdkdb6uUEPzAov0SeP9OjBJ8anAIMAOtBVVPQG/ZKAAAAAElFTkSuQmCC
+	</element>
+	<element id="PlayingTrackInTab">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEVJREFUeNpi/P//PwMlgImBQsCCzHn27BkyF+Q0RmyapKSkqOcCcgz4T9UwYMJnOl1igYkcfw+ICwaxAYwDnpkoNgAgwAC8ow0Y6wdUgwAAAABJRU5ErkJggg==
+	</element>
+	<element id="PlayingTrack">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEVJREFUeNpi/P//PwMlgImBQsCCzHn27BkyF+Q0RmyapKSkqOcCcgz4T9UwYMJnOl1igYkcfw+ICwaxAYwDnpkoNgAgwAC8ow0Y6wdUgwAAAABJRU5ErkJggg==
+	</element>
+    <element id="TrackSearchIcon">
+    iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKRJREFUeNpi/P//PwMlgImBQkCxASz4JB89evQMSIkB8Ssg7gHiPjk5OeINAAJJIBYGYg8gngQV68PrBaCt/6E0TOgdEC8D4nQgLqEkDLZBvYNpANC2UCQbMQDI30D8HchkBqq7DMTa6C6ox6cZCTAC8XEgXoMeiKokeKUCGisoBtxGjx6kQEUX6gCpR/fCUTxh8B8NWwFxGNxPQz8vUGwAQIABAOVDNd3ji0GhAAAAAElFTkSuQmCC
+    </element>
+	<element id="Visualiser">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGxJREFUeNpi/P//PwMlgImBQsCCzHn27BmYlpKSArFBTmOEslE0gcTwugBZA7pmIPhPVS8w4TOdCHHKXcBITDQiBy5eA2Ahj+RsrGygQYy0CURkk5HjHCSOzfm0DUTklEhxLNA0M1FsAECAAQDiYDCqr+BhsgAAAABJRU5ErkJggg==
+	</element>
+    <element id="NotificationIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHFJREFUeNpi/P//PwMlgHFwGPDs2TOSTZGSkmIE0SzIhpGgH24hEwOFgAWf6di8TIwBpHhl1AtoBvxHwjFo6mLQ5DEMYETCcUA8A8mQGCg/Dk0dzjBYDKVBmiyAOAGIM5HECQYisiELgTgel2YQAAgwAFRKIaKHV6C9AAAAAElFTkSuQmCC
+	</element>
+    <element id="PlaylistDirectoryIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAK0lEQVQ4jWNgGDTg27dv/4nFOA0gZAFedUPDAIrCgKCaUQOoZADZyXhAAQBVMLJvd4MvCAAAAABJRU5ErkJggg==
+	</element>
+	<element id="RecommendationsIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJJREFUeNqk0z9rwkAYx/EkFFqK7VYhUjqJUKGbdGmVzoIIFloXcejcDn0T3RzcXZVO6ii+Azt3EVRQJIUOAacsJX5THiFpzR+Sg08O7sIvued4VNu2lSTjwHkYhuG3/4TOvg1d139nLSD8EG8y+46ggArOUIsb8IAf3McNuENP5tCAV1iwXVJ4wfGfdUve9wS0UMQSM1zjAibOUcAUa5Tk/X9H+MCVBIyQ2d0YxljJ/iSoBhs84xRfqOMbJ3IcM0oRm1igjy4GmKMR9RbKyEKVX3YKl5P10IA08mjjBp+4laJdSj08Q3WaydULj3JNwz0fq+II7+5eUJN2o6YkHFsBBgDl3zr2PSFcTQAAAABJRU5ErkJggg==
+	</element>
+	<element id="UpcomingConcertsIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAATpJREFUeNqkk01KA0EQhdNREPEOg6joUnIBF6InEIxeINGlhOjOhSsNCLo0eoFExJUrQQSXMgcQiZC5gghupP1K3kjbtD/gg2+GeV1VU1WTOO995T8atUtRFOXzCLSgDnMwAS/wAD04hDcLzLLsI6EaFKvBABoKngenIj35A8V9qhok30IfZqCj4FId+X3F1b6MgC7hGHZ/GXkbXhU/aYazJbIDr3ZTSp15duDiHZj2lWBsRmcN+VOpHZTa0duM9Sj5BJrw9FOBO73FEhYCv0zuxvPFBSzpSAkXf/4hRSNswRVcB35TRStxF3GBJS3StBr43WCU5A6GsAfLwRLPdeaCIk5jDuMOVuAGxjTGdzqADViMO8hl2p/oEdowC+O6t+XXFZenvoKZ03AKa3APz7rb85nO87CldwEGAMvMSaq4pgrzAAAAAElFTkSuQmCC
+	</element>
+	<element id="AlertIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO5JREFUeNpi/P//PwMlgImBQsACY9xV0YQx2YA4A4gjgVgHKnYFiJcD8Qwg/gUSUL5zHdUAKJAG4m1ArAvEjEjiFkBsDsTJQOwFxE+xeYENqlkPpplzx2YwhgJGqNx2IGbHZkA61GY4YOTmBmM0APJWGjYDotCcjQswQtViGGBEQuAbYsQCNvDvwkVcUr+xGXAOGtpw8CO3EJcBV7B5ARTPKMmS6/A+MEYD/6FqMQyYiWwyWOXXr2CMBq5C1WJ44ScQeyInpO8evug2X4Gq+YkrL4BSmCkQgzx/Boi/QvEZqJgJcioEx+mA50aAAAMA8tk7B5VXXVcAAAAASUVORK5CYII=
+	</element>
+	<element id="SearchMenuButton">
+		iVBORw0KGgoAAAANSUhEUgAAABoAAAAUCAYAAACTQC2+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAVRJREFUeNrslb1KxEAUhZMljYWCkCcQbBYUVPyFLWwE7SzFysXVwsZKsbAWtbHZQgVxH0BsRV/An0JwYRufQBIQ3FaI34U7MkWckBG2EA98zDDczMnNHCZhlmVBL1QJeqS/ZxSlaWrmI3AIMzAAH3APu9C2H4rj2LujOjyKMWzCpI6Rrtd/21GYJMko4wPswUlOzTYcwDS8+HYkRjfa2YKj7hY+YcnXKNI33SioO4dTVwFnvciwrrzr8gQcw4oY9UOnwKijAXFpH2ahD1ZhCO5gEObkk3WhWrBJVVPo0jI8g3R2ZZmswXVFg9Ao2KSh6XPpTU3EbN4yuTTx3oGapiv4IXU1rQtKmH2bmDBIZLegqamSg3+FYe1ETEIYM/HOk5VEMRvPS53oAp7gCM40IF29Gab0wabWtryuIGve1rbzZK4gb7OoRG3LMittFP7/+Hz1JcAAetVMBjdAnWgAAAAASUVORK5CYII=
+	</element>
+    <element id="AddTabIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEhJREFUeNpi/P//PwMlgHGYG5CVlQWSZJw2bRpONUwMFIKBNwAlDKB+xguA4cGIzGdBNxCN/x+LGHYvPHv2bIhG4zDICwABBgAKjC2utYAUsAAAAABJRU5ErkJggg==
+	</element>
+    <element id="AddTabIconInCaptionBar">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEhJREFUeNpi/P//PwMlgHGYG5CVlQWSZJw2bRpONUwMFIKBNwAlDKB+xguA4cGIzGdBNxCN/x+LGHYvPHv2bIhG4zDICwABBgAKjC2utYAUsAAAAABJRU5ErkJggg==
+	</element>
+    <element id="PlayingIcon.Default">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJlJREFUeNqsU1sKgCAQVNEzeaSMLtNPZEfyx/uEH7aBQvnYFBsYVnbZZfYh9d6TEfD4MMZkQSklSeNP36uAECIrYK2dwGggLcVvMESdCskoGJK8A5fE76szSIIncA4KtqYhBtDeLTAyCFboMVJ13UEi/05eWxTyij+ub/2aEUeK69CKblLgnCud8gHmwM6djn6m39fYjUuAAQDAcSWEvkOYsQAAAABJRU5ErkJggg==
+	</element>
+    <element id="PausedIcon.Default">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIdJREFUeNpi/P//PwMlgBFmwMmTJzEkzc3NiTfg3Llz2OTTgXiGkZERIy4DmPAYngHSTMgFTHg0TwfibEIGsCCxkUPzJxBnQl0wlVgDwGFCaiwwMVAI0A34j4QziDGABYfzQZonEONCFhzisOibQK4BMEP+E0oLOJMyMckYxQCKM9OAGQAQYABHISy/0CVT5AAAAABJRU5ErkJggg==
+	</element>
+    <element id="PlayingIcon.Highlight">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAI5JREFUeNrEU9EKgCAMbKLfWtBLn+Jb/Wr4YBNcLHNLMmhwIJs7bjuFGOPQE4YOIYQTUtRqRrqYMSKiRmwUdRNiax6h0rwi5iJ/WxjQEpNUlt8RS1aQ8kAEzjngBLYkfO1Ct41sRsLUQmAF+anZtyi0Qp7s8087sgo5OaC+BW7jpYB2NS0RPvtMvxEcAgwATz5BC0GgAu8AAAAASUVORK5CYII=
+	</element>
+    <element id="PausedIcon.Highlight">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIhJREFUeNrEk0EKgCAQRZtIOqrSqqO0q6umi2kGEgYzHawoeLQYeX78CojYPfkgCkIIl6ExpiroS0OSWgJbEzhiPZPArYEFjPde4ggkJv7HNTlkAhl1J2Zi4z1KCVJBbuG3grQFFDjNPRhkmqSBpVazpkaWjNozyM0tN9Es0FxleO0x/SY4BBgAYNWE0GM9Rn0AAAAASUVORK5CYII=
+	</element>
+    <element id="Controls.WebLinkIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJhJREFUeNpi/P//PwMlgAWXxPPnz5G5GLZISkoygmgmIi1ihOI4IP6KLMFEgmtjgXg6EGegmAwKA6BzcQWEKxDvQdO8BOQlmBdY0P2EJRzQNWMPRLRAw+bsJWhhQjAM0DW7YA1dpDBgBHoD2flfYJpB4jA1SF7Gnw6ACniwiGGoY2KgEAy8Achh8B9HVOJP45TmRoq9ABBgAHstOB1PUxV3AAAAAElFTkSuQmCC
+	</element>
+    <element id="ConsolidateButtonsIcon">
+		iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUhJREFUeNqkk7FKA0EQhhPvrETSX2lURB/At5ArJNoZBEGso2glaGGjrUQEY2OhWIS8RV5ARC/t9RIsROX8Rv6D8bxIwIGP5eZm/52dma1mWVb5j1WLAmmaBiyX0IOu+7UCMWxFUfT5S4CNXucBQph3vid4h6XcgVBlYkRmtzALL/Ch1b7vSq+gtPO0NuEcBnANzzAHTajDDlwpNsgFzLGsEw60cbskswvYgBNoQD8XsAKd6YRHWLT7FU11svosKMPdvAY9pTmEjttwA2+2Op2O4iy+WyzilO6c25q1DVadb6C4bysKvErZd8Nm4t756or70QWrwalaNW4NEmiF+her30ewD22Cy7rQhhnFWRfiv+YgUTsTZdbU6udgctQoH4qhCmZ3npbveJxRbqjaNb2JmjJZLwaGXs29xr5mw9ueXmTgX+OXAAMAOdaIVMc9vOQAAAAASUVORK5CYII=
+	</element>
+  <element id="SplashScreen">
+        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
+  </element>
+</images>
+</root>

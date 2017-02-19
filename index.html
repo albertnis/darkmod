@@ -1,0 +1,66 @@
+<html>
+<head>
+     <meta charset="UTF-8">
+    <title>DarkMOD - MusicBee Skin</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jscolor.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function update(jpicker) {
+            $('#banner').css('background-color', '#'+picker.jscolor);
+            $('.dyn-color').css('color', '#'+picker.jscolor);
+             var rgbcode =
+                Math.floor(jpicker.rgb[0]) + ',' +
+                Math.floor(jpicker.rgb[1]) + ',' +
+                Math.floor(jpicker.rgb[2]);
+            $('#genlink').attr('href','gen.php?rgb='+rgbcode);
+            $('#genlinkb').attr('href','gen.php?rgb='+rgbcode+'&v=2');
+        }
+
+        $(document).ready(function() { update($('#picker')); });
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45382817-1', 'auto');
+ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+    <div class="img-holder">
+        <div class="notimg">
+            <div class="banner" id="banner">
+                <div class="bc bc-top"></div>
+            </div>
+            <div class="window-bg"></div>
+        </div>
+    </div>
+    <div class="subtitle">
+        <h1>Dark<span class="dyn-color">MOD</span></h1>
+        <h2>Create a custom DarkMOD theme based on DarkRED Flat for MusicBee 3</h2>
+        <div class="steps">
+        <div class="step one">
+            <div class="step-text">
+                <span class="label"><b>Step One: Choose a colour</b></span>
+                <span class="but">The provided colour picker should help</span>
+            </div>
+            <input class="step-control jscolor {mode:'HVS',onFineChange:'update(this)'} button" value="3d78a5" id="picker">
+        </div>
+        <div class="step two">
+            <div class="step-text"><span class="label"><b>Step Two: Download the skin</b></span>
+                <span class="but">Save or copy to your MusicBee skins folder</span></div>
+            <div id="genbut" class="step-control button"><a id="genlink" href="gen.php?rgb=0,51,76" id="gen">GO</a></div></div>
+        </div>
+            <div class="footer">
+                <span>Version 1.1.0</span>
+                <a href="http://getmusicbee.com/forum/index.php?topic=17326.0">Download MusicBee</a>
+                <a href="http://getmusicbee.com/forum/index.php?topic=17373.0">Skin forum thread</a>
+            </div>
+    </div>
+    </div>
+
+</body>
+</html>
