@@ -1,4 +1,7 @@
 # DarkMOD
+
+**This project is no longer maintained. See the [JavaScript port](https://github.com/albertnis/darkmod-js).**
+
 *A dynamic MusicBee skin using PHP*
 
 [![Project link][screenshot]][project]
